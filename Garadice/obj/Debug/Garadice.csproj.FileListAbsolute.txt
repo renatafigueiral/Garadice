@@ -1,0 +1,116 @@
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\roslyn\csc.exe
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\roslyn\System.Collections.Immutable.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\roslyn\vbc.exe
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\roslyn\VBCSCompiler.exe
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\roslyn\VBCSCompiler.exe.config
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\Garadice.dll.config
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\Garadice.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\Garadice.pdb
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\Antlr3.Runtime.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\Microsoft.Web.Infrastructure.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\Newtonsoft.Json.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\System.Web.Helpers.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\System.Web.Mvc.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\System.Web.Optimization.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\System.Web.Razor.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\System.Web.WebPages.Deployment.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\System.Web.WebPages.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\System.Web.WebPages.Razor.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\WebGrease.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\System.Web.Helpers.xml
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\System.Web.Mvc.xml
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\System.Web.Optimization.xml
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\System.Web.Razor.xml
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\System.Web.WebPages.xml
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\System.Web.WebPages.Deployment.xml
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\System.Web.WebPages.Razor.xml
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\Antlr3.Runtime.pdb
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\Newtonsoft.Json.xml
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\obj\Debug\Garadice.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\obj\Debug\Garadice.pdb
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\EntityFramework.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\EntityFramework.SqlServer.dll
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\EntityFramework.xml
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\EntityFramework.SqlServer.xml
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\obj\Debug\Garadice.Migrations.Initial.resources
+c:\users\upinthecloud\documents\visual studio 2015\Projects\Garadice\Garadice\obj\Debug\Garadice.csproj.GenerateResource.Cache
+C:\Users\UpInTheCloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\PagedList.dll
+C:\Users\UpInTheCloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\PagedList.Mvc.dll
+C:\Users\UpInTheCloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\PagedList.xml
+C:\Users\UpInTheCloud\documents\visual studio 2015\Projects\Garadice\Garadice\bin\PagedList.Mvc.xml
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice\Garadice\obj\Debug\Garadice.Migrations.employee.resources
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice\Garadice\obj\Debug\Garadice.Migrations.Job.resources
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice\Garadice\obj\Debug\Garadice.Migrations.Job2.resources
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice\Garadice\obj\Debug\Garadice.Migrations.Job3.resources
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice\Garadice\obj\Debug\Garadice.Migrations.Job4.resources
+C:\Users\UpInTheCloud\documents\visual studio 2015\Projects\Garadice\Garadice\obj\Debug\Garadice.Migrations.JobTrack.resources
+C:\Users\UpInTheCloud\documents\visual studio 2015\Projects\Garadice\Garadice\obj\Debug\Garadice.Migrations.JobCreateDate.resources
+C:\Users\UpInTheCloud\documents\visual studio 2015\Projects\Garadice\Garadice\obj\Debug\Garadice.Migrations.JobTimeEntry.resources
+C:\Users\UpInTheCloud\documents\visual studio 2015\Projects\Garadice\Garadice\obj\Debug\Garadice.csprojResolveAssemblyReference.cache
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\roslyn\csc.exe
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\roslyn\vbc.exe
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\roslyn\VBCSCompiler.exe
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\Garadice.dll.config
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\Garadice.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\Garadice.pdb
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\Antlr3.Runtime.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\EntityFramework.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\EntityFramework.SqlServer.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\Newtonsoft.Json.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\PagedList.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\PagedList.Mvc.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\System.Web.Helpers.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\System.Web.Mvc.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\System.Web.Optimization.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\System.Web.Razor.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\System.Web.WebPages.Deployment.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\System.Web.WebPages.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\System.Web.WebPages.Razor.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\WebGrease.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\EntityFramework.xml
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\EntityFramework.SqlServer.xml
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\PagedList.xml
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\PagedList.Mvc.xml
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\System.Web.Helpers.xml
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\System.Web.Mvc.xml
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\System.Web.Optimization.xml
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\System.Web.Razor.xml
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\System.Web.WebPages.xml
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\System.Web.WebPages.Deployment.xml
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\System.Web.WebPages.Razor.xml
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\Antlr3.Runtime.pdb
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\bin\Newtonsoft.Json.xml
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\obj\Debug\Garadice.csprojResolveAssemblyReference.cache
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\obj\Debug\Garadice.Migrations.Initial.resources
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\obj\Debug\Garadice.Migrations.employee.resources
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\obj\Debug\Garadice.Migrations.Job.resources
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\obj\Debug\Garadice.Migrations.Job2.resources
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\obj\Debug\Garadice.Migrations.Job3.resources
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\obj\Debug\Garadice.Migrations.Job4.resources
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\obj\Debug\Garadice.Migrations.JobTrack.resources
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\obj\Debug\Garadice.Migrations.JobCreateDate.resources
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\obj\Debug\Garadice.Migrations.JobTimeEntry.resources
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\obj\Debug\Garadice.csproj.GenerateResource.Cache
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\obj\Debug\Garadice.dll
+C:\Users\UpInTheCloud\Documents\Visual Studio 2015\Projects\Garadice - Copy (3)\Garadice\obj\Debug\Garadice.pdb

@@ -1,0 +1,136 @@
+﻿@*@model IEnumerable<Garadice.Models.Document>*@
+
+@model PagedList.IPagedList<Garadice.Models.Document>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Documents";
+}
+
+<h2>Documents</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create") |   @Html.ActionLink("Clear Search", "Index")
+</p>
+
+@using (Html.BeginForm("Index", "Document", FormMethod.Get))
+{
+    <p>
+        @Html.TextBox("searchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Search" class="btn btn-default" />
+    </p>
+}
+<span class="label label-default">Total search items @ViewBag.Total </span>
+
+<table class="table">
+    <tr>
+        <th></th>       
+        <th>
+            @Html.DisplayName("Company Name")<br />
+            @*<a href="/Document?sortOrder=company_asc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
+            <a href="/Document?sortOrder=company_desc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></a>*@
+        </th>
+        <th>
+            @Html.DisplayName("Document Name")<br />
+            <a href="/Document?sortOrder=name_asc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
+            <a href="/Document?sortOrder=name_desc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></a>
+
+        </th>
+        <th>
+            @Html.DisplayName("File Name")
+        </th>
+        @*<th>
+            @Html.DisplayName("File Content Type")
+        </th>
+        <th>
+            @Html.DisplayName("File Extension")
+        </th>
+        <th>
+            @Html.DisplayName("Download Name")
+        </th>*@
+        <th>
+            @Html.DisplayName("More Info")
+        </th>
+        <th>
+            @Html.DisplayName("Created Date")<br />
+            <a href="/Document?sortOrder=date_asc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
+            <a href="/Document?sortOrder=date_desc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></a>
+        </th>
+        <th></th>
+    </tr>
+    @*<tr>
+        <th></th>
+        <th>
+            @Html.DisplayNameFor(model => model.Company.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FileName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContentType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Extension)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Path)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </th>
+        <th></th>
+    </tr>*@
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <span class='label @item.DocumentType'>@item.DocumentType</span>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Company.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FileName)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.ContentType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Extension)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Path)
+        </td>*@
+        @*<td>
+            @Html.DisplayFor(modelItem => item.DocumentType)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.DocumentID })<br />
+            @Html.ActionLink("Details", "Details", new { id = item.DocumentID })<br />
+            @Html.ActionLink("Delete", "Delete", new { id = item.DocumentID })<br />
+            @Html.ActionLink("Download", "Download", new { id = item.DocumentID })
+        </td>
+    </tr>
+}
+
+</table>
+<br />
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))

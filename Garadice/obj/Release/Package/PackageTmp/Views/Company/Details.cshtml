@@ -1,0 +1,163 @@
+﻿@model Garadice.Models.Company
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span> Company</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VatNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VatNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CRO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CRO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SiteUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SiteUrl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+        @if (Model.Contacts.Any())
+        {
+            <dt></dt>
+            <dd><hr /></dd>
+           <dt>
+                 @Html.DisplayName("Contacts")
+            </dt>
+
+            <dd>
+                <table cellspacing="5" cellpadding="5" border="1">
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone/Mobile</th>
+                        <th>Email</th>
+                        <th>Position</th>
+                        <th>More Info</th>
+                   </tr>
+                    @foreach (var contact in Model.Contacts)
+                    {
+                        <tr>
+                            <td>@contact.FullName</td>
+                            <td>@contact.Phone @contact.Mobile</td>
+                            <td>@contact.Email</td>
+                            <td>@contact.Position</td>
+                            <td>@contact.Description</td>
+                        </tr>
+                    }
+                </table>
+            </dd>
+        }
+        @if (Model.Documents.Any())
+        {
+            <dt></dt>
+            <dd><hr /></dd>
+           <dt>
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span> @Html.DisplayName("Documents ")
+            </dt>
+
+            <dd>
+
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-2"><b>Name</b></div>
+                    <div class="col-md-3"><b>More Info</b></div>
+                    <div class="col-md-2"><b>Created Date</b></div>
+                    <div class="col-md-1"></div>
+               </div>
+                @foreach (var doc in Model.Documents)
+                {
+                    <div class="row">
+                        <div class="col-md-1"><span class='label @doc.DocumentType'>@doc.DocumentType</span></div>
+                        <div class="col-md-2">@doc.Name</div>
+                        <div class="col-md-3">@doc.Description</div>
+                        <div class="col-md-2">@doc.CreatedDate</div>
+                        <div class="col-md-1">@Html.ActionLink("d", "Download", "Document", new { id = doc.DocumentID }, null)</div>
+                     </div>
+
+                }
+                @*<table border="1" style="padding: 5px;">
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>More Info</th>
+                        <th>Created Date</th>
+                        <th></th>
+
+                    </tr>
+                    @foreach (var doc in Model.Documents)
+                    {
+                        <tr>
+                            <td><span class='label @doc.DocumentType'>@doc.DocumentType</span></td>
+                            <td>@doc.Name</td>
+                            <td>@doc.Description</td>
+                            <td>@doc.CreatedDate</td>
+                            <td>@Html.ActionLink("download", "Download", "Document", new { id = doc.DocumentID }, null)</td>
+                        </tr>
+                    }
+                </table>*@
+            </dd>
+        }
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CompanyID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

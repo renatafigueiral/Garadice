@@ -1,0 +1,96 @@
+﻿@*@model IEnumerable<Garadice.Models.Job>*@
+@model PagedList.IPagedList<Garadice.Models.Job>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Jobs";
+}
+
+<h2>Jobs</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create") |   @Html.ActionLink("Clear Search", "Index")
+</p>
+
+@using (Html.BeginForm("Index", "Job", FormMethod.Get))
+{
+    <p>
+        @Html.TextBox("searchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Search" class="btn btn-default" />
+    </p>
+}
+<span class="label label-default">Total search items @ViewBag.Total </span>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Company Name")
+        </th>
+        <th>
+            @Html.DisplayName("Employe Name")
+        </th>
+        <th>
+            @Html.DisplayName("Job Type")
+        </th>
+        <th>
+            @Html.DisplayName("Job Name")
+            <a href="/Job?sortOrder=name_asc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
+            <a href="/Job?sortOrder=name_desc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></a>
+        </th>
+        <th>
+            @Html.DisplayName("More Info")
+        </th>
+        <th>
+            @Html.DisplayName("Estimated Duration")
+        </th>
+        <th>
+            @Html.DisplayName("Job Status")
+        </th>
+        <th>
+            @Html.DisplayName("Created Date")
+            <a href="/Job?sortOrder=date_asc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
+            <a href="/Job?sortOrder=date_desc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></a>
+
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Company.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employee.FullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @item.EstimatedDuration
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.JobID })<br />
+            @Html.ActionLink("Details", "Details", new { id = item.JobID })<br />
+            @Html.ActionLink("Delete", "Delete", new { id=item.JobID })
+        </td>
+    </tr>
+}
+
+</table>
+<br />
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))

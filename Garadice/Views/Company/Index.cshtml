@@ -1,0 +1,152 @@
+﻿
+@model PagedList.IPagedList<Garadice.Models.Company>
+@*@model PagedList.IPagedList<Garadice.Models.Company>*@
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Companies";
+}
+
+<h2>Companies</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create") |   @Html.ActionLink("Clear Search", "Index")
+</p>
+@using (Html.BeginForm("Index", "Company", FormMethod.Get))
+{
+    <p>
+        @Html.TextBox("searchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Search" class="btn btn-default" />
+    </p>
+}
+<span class="label label-default">Total search items @ViewBag.Total </span>
+<table class="table">
+   @*<tr>
+        <th>
+            @Html.DisplayName("Documents")
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+            <a href="/Company?sortOrder=name_asc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
+            <a href="/Company?sortOrder=name_desc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></a>
+       </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VatNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CRO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SiteUrl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+            <a href="/Company?sortOrder=date_asc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
+            <a href="/Company?sortOrder=date_desc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></a>
+        </th>
+        <th></th>
+    </tr>*@
+    <tr>
+            <th>
+                @Html.DisplayName("Documents")
+            </th>
+            <th>
+                @Html.DisplayName("Company Name")<br />
+                <a href="/Company?sortOrder=name_asc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
+                <a href="/Company?sortOrder=name_desc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></a>
+           </th>
+            <th>
+                @Html.DisplayName("VAT No")
+           </th>
+            <th>
+                @Html.DisplayName("CRO No")
+           </th>
+            <th>
+                @Html.DisplayName("Company Phone")
+            </th>
+            <th>
+                @Html.DisplayName("Company Email")
+            </th>
+            @*<th>
+                @Html.DisplayName("Website")
+            </th>*@
+            <th>
+                @Html.DisplayName("More info")
+            </th>
+            <th>
+                @Html.DisplayName("Created Date")<br />
+                <a href="/Company?sortOrder=date_asc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
+                <a href="/Company?sortOrder=date_desc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></a>
+            </th>
+            <th></th>
+        </tr>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+
+            @if (item.Documents.Any())
+            {
+
+                if (item.Documents.Any(f => f.DocumentType == DocumentType.AML))
+                {
+                    <span class='label AML'>AML</span><span class="badge">@item.Documents.Count(f => f.DocumentType == DocumentType.AML)</span><br />
+                }
+                if (item.Documents.Any(f => f.DocumentType == DocumentType.Other))
+                {
+                    <span class='label Other'>Other</span><span class="badge">@item.Documents.Count(f => f.DocumentType == DocumentType.Other)</span>
+                }
+            }
+            else
+            {
+                <span class='label label-warning'>None</span>
+            }
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VatNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CRO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.SiteUrl)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CompanyID })<br/>
+            @Html.ActionLink("Details", "Details", new { id=item.CompanyID })<br />
+            @Html.ActionLink("Delete", "Delete", new { id=item.CompanyID }) 
+        </td>
+    </tr>
+}
+
+
+</table>
+<br />
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))

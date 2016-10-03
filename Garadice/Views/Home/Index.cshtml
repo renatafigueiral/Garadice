@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>AML App</h1>
+ </div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span> Companies</h2>
+        <p>@ViewBag.TotalCompanies </p>
+        <p>@Html.ActionLink("Companies", "Index", "Company")</p>
+    </div>
+    <div class="col-md-4">
+        <h2><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Documents</h2>
+        <p>@ViewBag.TotalDocuments </p>
+        <p>@Html.ActionLink("Documents", "Index", "Document")</p>
+    </div>
+    <div class="col-md-4">
+        <h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Contacts</h2>
+        <p>@ViewBag.TotalContacts </p>
+        <p>@Html.ActionLink("Contacts", "Index", "Contact")</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Employees</h2>
+        <p>@ViewBag.TotalEmployees</p>
+        <p>@Html.ActionLink("Employees", "Index", "Employee")</p>
+    </div>
+    <div class="col-md-4">
+        <h2><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Jobs</h2>
+        <p>@ViewBag.TotalJobs</p>
+        <p>@Html.ActionLink("Jobs", "Index", "Job")</p>
+    </div>
+    <div class="col-md-4">
+        
+    </div>
+</div>

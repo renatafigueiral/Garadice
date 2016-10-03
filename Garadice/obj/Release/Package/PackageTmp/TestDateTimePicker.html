@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap calendar template</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Bootstrap CSS and bootstrap datepicker CSS used for styling the demo pages-->
+    <link href="Content/bootstrap-datetimepicker.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+
+
+    <!--add this css style where you are using bootstrap datepicker within the model window
+    <style type="text/css">
+        .datepicker {
+            z-index: 1151 !important;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#datepicker').datepicker({
+                format: "dd/mm/yyyy",
+                autoclose: true
+            });
+        });
+    </script>-->
+</head>
+<body>
+    <!--<div class="container">
+        <p>Select Start Date:</p>
+        <input type="text" readonly id="datepicker">
+    </div>-->
+    <div class="container">
+        <div class="row">
+            <div class='col-sm-6'>
+                <div class="form-group">
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input type='text' class="form-control" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class='col-sm-6'>
+                <div class="form-group">
+                    <div class='input-group date' id='datetimepicker3'>
+                        <input type='text' class="form-control" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-time"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/moment.js"></script>
+    <script src="Scripts/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+                //$('#datetimepicker1').datetimepicker({
+                //    pickDate: true,
+                //    pickTime: true,
+                //    useMinutes: true,
+                //    useSeconds: true,
+                //    startDate: moment().subtract('days', 1)
+                //});
+            });
+
+    </script>
+    <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker3').datetimepicker({
+                    format: 'LT'
+                });
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+﻿@*@model IEnumerable<Garadice.Models.Contact>*@
+@model PagedList.IPagedList<Garadice.Models.Contact>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Contacts";
+}
+
+<h2>Contacts</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create") |   @Html.ActionLink("Clear Search", "Index")
+</p>
+
+@using (Html.BeginForm("Index", "Contact", FormMethod.Get))
+{
+    <p>
+        @Html.TextBox("searchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Search" class="btn btn-default" />
+    </p>
+}
+<span class="label label-default">Total search items @ViewBag.Total </span>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Company Name")
+        </th>
+        <th>
+            @Html.DisplayName("First Name")<br />
+            <a href="/Contact?sortOrder=name_asc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
+            <a href="/Contact?sortOrder=name_desc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></a>
+        </th>
+        <th>
+            @Html.DisplayName("Last Name")<br />
+            <a href="/Contact?sortOrder=lastname_asc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
+            <a href="/Contact?sortOrder=lastname_desc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></a>
+        </th>
+        <th>
+            @Html.DisplayName("Phone")
+        </th>
+        <th>
+            @Html.DisplayName("Mobile")
+        </th>
+        <th>
+            @Html.DisplayName("Email")
+        </th>
+        <th>
+            @Html.DisplayName("Position")
+        </th>
+        @*<th>
+            @Html.DisplayName("More Info")
+        </th>*@
+        <th>
+            @Html.DisplayName("Created Date")<br />
+            <a href="/Contact?sortOrder=date_asc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
+            <a href="/Contact?sortOrder=date_desc&currentFilter=@ViewBag.CurrentFilter"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></a>
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Company.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mobile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Position)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ContactID }) <br />
+            @Html.ActionLink("Details", "Details", new { id=item.ContactID }) <br />
+            @Html.ActionLink("Delete", "Delete", new { id=item.ContactID })
+        </td>
+    </tr>
+}
+
+</table>
+<br />
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
